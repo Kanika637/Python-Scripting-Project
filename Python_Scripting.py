@@ -51,7 +51,7 @@ def run_command(command, path):
     os.chdir(path)
     
     result =run(command, stdout=PIPE, stdin=PIPE, universal_newlines=True)
-    print("Compiled Result is" + result)
+    print("Compiled Result is" , result)
     
     #coming back to the directory
     os.chdir(cwd) 
